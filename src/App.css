@@ -64,8 +64,8 @@
 }
 
 .imagem {
-background-image: url("./images/three-g16fb1d366_640.jpg"); 
-background-size: cover;
+  background-image: url("./images/three-g16fb1d366_640.jpg"); 
+  background-size: cover;
 }
 .imagem-2 {
   background-image: url("./images/man-g8ba6a86ce_1280.jpg");
