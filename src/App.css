@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-section-main {
+  display: flex;
+  flex-flow: wrap column;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  height: 50rem; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex-section {
+  display: flex; 
+  flex-flow: wrap column;
+  align-content: center;
+  justify-content: center;
+  height: 45rem;
+  background-color: #ededed;
+  margin: 0 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-div {
+ display: flex;
+ flex-flow: wrap row;
+ justify-content: center;
+ align-content: space-around;
+ align-self: center;
+ background-color: #ededed;
+ width: 90%;  
+ height: 40.5em;
+} 
+
+.flex-divs {
+  display: flex;
+  box-sizing: border-box;
+  height:  18.75em;
+  width:  22.37em;
+  margin: 10px;
+  padding: 17px;
+  border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  color: white;    
+}
+
+.sub-div-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 50%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.imagem {
+background-image: url("./images/three-g16fb1d366_640.jpg"); 
+background-size: cover;
+}
+.imagem-2 {
+  background-image: url("./images/man-g8ba6a86ce_1280.jpg");
+  background-size: cover;
+}
+.imagem-3 {
+  background-image: url("./images/female-g93dbac839_1280.jpg");
+  background-size: cover;
+}
+.imagem-4 {
+  background-image: url("./images/fashion-g3b223a47b_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.imagem-5 {
+  background-image: url("./images/feet-g4f33e1281_1280.jpg");
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imagem-6 {
+  background-image: url("./images/adult-g76e97d62f_1280.jpg");
+  background-size: cover;
 }
+
+.mixed {
+  font-family: serif;
+  font-weight: 500;
+}
+
+.vestidos {
+  font-size: 18px;
+}
+
+.valor {
+ font-size: 24px;
+ font-weight: 700;
+ text-align: right;
+}
+
+.preco-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+/* @media screen and (min-width: 768px) {
+  * {
+      overflow: auto;
+  }  
+  
+  .flex-section {
+      width: 45rem;
+  }
+
+   .flex-div {
+      align-content: initial; 
+      height: initial;
+  }  
+  
+  h2 {
+      padding-left: 13%;
+      font-size: 18px;
+      text-align: center;
+  }
+
+  .flex-divs {
+      width: 29.37em;
+      margin: initial;
+  }
+ 
+} */
