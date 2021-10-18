@@ -1,6 +1,7 @@
 /* import "~slick-carousel/slick/slick.css";  */
 import './App.css';
 import Slider from "react-slick";
+import { prodCarouselOne, prodCarouselTwo } from "./products";
 /* import Slider from "react-slick"; */
 
 function App() {
@@ -37,8 +38,25 @@ function App() {
     <section className="flex-section-main">
       <div className="flex-section"> 
            <h2>Editorias Shop2gether</h2> 
-           <Slider {...settings} className="flex-div">      
-               <div className="flex-divs imagem">
+           <Slider {...settings} className="flex-div">
+                { prodCarouselOne.map(({ id, image, message, title, message_preco, preco }) => {
+                   return (
+                        <div key={id} className="flex-divs">
+                            <div className="cards">
+                                <img src={ image } alt="imagem do card"/>
+                                <div className="sub-div-card">
+                                    <div className="mixed">{message}</div>
+                                    <h3 className="vestidos">{title}</h3>
+                                </div>
+                                <div className="preco-conteiner">
+                                    <div>{message_preco}</div>
+                                    <div className="valor">{preco}</div> 
+                                </div>
+                            </div> 
+                        </div>   
+                   )})
+                }      
+{/*               <div className="flex-divs imagem">
                     <div className="cards">
                         <div className="sub-div-card">
                             <div className="mixed">Mixed</div>
@@ -73,11 +91,28 @@ function App() {
                             <div className="valor">R$149</div> 
                        </div>
                     </div>                   
-               </div>
-            </Slider>
+               </div> */}
+           </Slider>
             <h2>Editorias Shop2gether</h2>   
             <Slider {...settings} className="flex-div">
-               <div className="flex-divs imagem-4">
+                { prodCarouselTwo.map(({ id, image, message, title, message_preco, preco }) => {
+                    return (
+                        <div key={id} className="flex-divs">
+                            <div className="cards">
+                                <img src={ image } alt="imagem do card"/>
+                                <div className="sub-div-card">
+                                    <div className="mixed">{message}</div>
+                                    <h3 className="vestidos">{title}</h3>
+                                </div>
+                                <div className="preco-conteiner">
+                                    <div>{message_preco}</div>
+                                    <div className="valor">{preco}</div> 
+                                </div>
+                            </div> 
+                        </div>   
+                    )})
+                }      
+              {/*  <div className="flex-divs imagem-4">
                    <div className="cards">
                         <div className="sub-div-card">
                             <div>Animale</div> 
@@ -112,8 +147,8 @@ function App() {
                             <div className="valor">R$279</div> 
                         </div>
                     </div>
-               </div> 
-          </Slider>
+               </div>  */}
+            </Slider> 
       </div> 
    </section>
   );

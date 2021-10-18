@@ -1,4 +1,4 @@
-import img1 from './images/three-g16fb1d366_640.jpg"';
+import img1 from './images/three-g16fb1d366_640.jpg';
 import img2 from './images/man-g8ba6a86ce_1280.jpg';
 import img3 from './images/female-g93dbac839_1280.jpg';
 import img4 from './images/fashion-g3b223a47b_1280.jpg';
